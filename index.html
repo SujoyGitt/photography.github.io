@@ -1,156 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+    <!-- this is Start font link -->
     <script src="http://kit.fontawesome.com/55922b8b80.js" crossorigin="anonymous"></script>
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
 </head>
+<!-- this is End font link -->
+
 <body>
-   <header id="home">
-       <nav>
-           <div class="logo">
-               Pho<span>to  </span>Gra<span>Phy</span>
-           </div>
-           <div class="menubar"><i class="fa fa-bars"></i></div>
-           <div class="menu">
-            <div class="menucross"> X </div>
-               <a href="#home">Home</a>
-               <a href="#about">About</a>
-               <a href="#gallery">Gallery</a>
-               <a href="#contact">Contact</a>
-           </div>
-           <div class="icon">
-               <i class="fa fa-search"></i>
-               <a href="">Login</a>
-           </div>
-       </nav>
-      <section class="h-text">
-          <i class="fa fa-camera" id="camera"></i>
-          <h1 class="animate__animated animate__bounce">Capturing the moments that captivate your heart.</h1>
-          <input type="text" name="" placeholder="Search here...">
-          <button><i class="fas fa-search"></i></button>
-      </section>
-   </header>
-   <section class="filter-gallery" id="gallery">
-           <ul class="portfolio-menu">
-               <li class="active" data-filter="all">All</li>
-               <li data-filter="nature">Nature</li>
-               <li  data-filter="work">work</li>
-               <li data-filter="Study">Study</li>
-           </ul>
-   
-       <div class="portfolio-item">
-           <div class="item nature one" data-item="nature">
-               <img src="jpg/2.jpg" alt="" width="100" height="100">
-           </div>
-           <div class="item work two" data-item="work">
-               <img src="jpg/3.jpg" alt="" width="100" height="100">
-           </div>
-           <div class="item study three" data-item="Study">
-               <img src="jpg/4.jpg" alt="" width="100" height="100">
-           </div>
-           <div class="item nature four" data-item="nature">
-               <img src="jpg/8.jpg" alt="" width="100" height="100">
-           </div>
-           <div class="item work five" data-item="work">
-               <img src="jpg/9.jpg" alt="" width="100" height="100">
-           </div>
-           <div class="item study six" data-item="Study">
-               <img src="jpg/10.jpg" alt="" width="100" height="100">
-           </div>
-           <div class="item nature seven" data-item="nature">
-               <img src="jpg/5.jpg" alt="" width="100" height="100">
-           </div>
-           <div class="item work eight" data-item="work">
-               <img src="jpg/6.jpg" alt="" width="100" height="100">
-           </div>
-           <div class="item study nine" data-item="Study">
-               <img src="jpg/7.jpg" alt="" width="100" height="100">
-           </div>         
-       </div>
-   </section>
-   
-   <section class="member" id="about">
-       <div class="member-info">
-           <h1>Our <span>Information</span></h1>
-           <p>What Our Client says</p>
-       </div>
-       <div class="member-card">
-           <img src="png/client.png" alt="">
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nam atque ab dolor culpa corporis pariatur harum, sapiente excepturi. Necessitatibus omnis quo vitae quis deleniti harum ab, exercitationem dolore facere.</p>
-           <h2>Devid Johnson</h2>
-           <img src="png/facebook.png" alt="">
-           <img src="png/whatsapp.png" alt="">
-           <img src="png/ins.png" alt="">
-           <img src="png/twitter.png" alt="">
-       </div>
-       <div class="m-images">
-           <img src="jpg/person 1.jpg" alt="">
-           <img src="jpg/person2.jpg" alt="">
-           <img src="jpg/person3.jpg" alt="">
-           <img src="jpg/person4.jpg" alt="">
-           <img src="jpg/person5.jpg" alt="">
-           <img src="jpg/person6.jpg" alt="">
-       </div>
-   </section>
-   <footer id="contact">
-      <div class="newsletter">
-          <div>
-              <h2>Subcribe Our Group</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, illo!</p>
-          </div>
-          <div class="ntext">
-              <label for="">
-                  <input type="text" name="" id="">
-                  <button>Subcribe</button>
-              </label>
-          </div>
-      </div>
-      <div class="f-contact">
-          <div class="first-child">
-              <h1>Information</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magni?</p>
-              <ul>
-                  <li><a href=""><i class="fab fa-whatsapp"></i></a></i></li>
-                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                  <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+    <div class="main" id="home">
+        <div class="nav">
+            <div class="logo"><span><i class="fas fa-paint-brush"></i></span> beautician</div>
+            <div class="menu">
+                <div class="menuber">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <div class="childmenu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">service</a></li>
+                        <li><a href="#features">features</a></li>
+                        <li><a href="#testimonial">testimonial</a></li>
+                        <li><a href="#contact">contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="banner">
+            <h1>Beauty Salon</h1>
+            <p>Exclusive beauty Salon Spa and care</p>
+            <ul>
+                <li><a href="">Find Out</a></li>
+                <li><a href="">Read More</a></li>
+            </ul>
+        </section>
+    </div>
+    <section class="features" id="features">
+        <h5><i class="fas fa-paint-brush"></i>FEATURES</h5>
+        <h2>Why Choose Us</h2>
+        <div class="features-content">
+            <div class="features-one">
+                <p>Experienced Staff</p>
+                <ul>
+                    <li><i class="fas fa-shield-alt"></i></li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est nisi asperiores quod.</li>
                 </ul>
+                <p>Pre Booking Online</p>
+                <ul>
+                    <li><i class="far fa-check-square"></i></li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est nisi asperiores quod.</li>
+                </ul>
+                <p>Affordable Cost</p>
+                <ul>
+                    <li><i class="fas fa-rupee-sign"></i></li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est nisi asperiores quod.</li>
+                </ul>
+            </div>
+            <div class="features-two"></div>
         </div>
-        <div>
-            <h2>Useful links</h2>
+    </section>
+    <section class="services" id="services">
+        <p><span><i class="fas fa-paint-brush"></i></span> SERVICES</p>
+        <h2>We Provide Better</h2>
+        <div class="services-gallery">
+            <div class="services-one">
+                <div class="one-work">
+                    <h5>We Care Your Face</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eum vero totam.</p>
+                </div>
+            </div>
+            <div class="services-two">
+                <div class="one-work">
+                    <h5>We Care Your Eye and Lift</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eum vero totam.</p>
+                </div>
+            </div>
+            <div class="services-three">
+                <div class="one-work">
+                    <h5>We Care Your Hair</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eum vero totam.</p>
+                </div>
+            </div>
+            <div class="services-four">
+                <div class="one-work">
+                    <h5>We Care Your Skin and Nail</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eum vero totam.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="testimonial" id="testimonial">
+        <p><i class="fas fa-paint-brush"></i>TESTIMONIAL</p>
+        <h4>What Client Says</h4>
+        <div class="client-says">
+
+            <div class="client-one cone">
+                <div class="client-id">
+                    <div>
+                        <img src="jpg/person 1.jpg" alt="">
+                    </div>
+                    <div>
+                        KEN NORMAN <i class="fab fa-twitter"></i><br>
+                        <span>@kennorman</span>
+                        <br>
+                    </div>
+                    <div class="paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut temporibus fugiat iusto eius,
+                        aliquam maxime architecto debitis perspiciatis blanditiis nobis error, voluptatibus hic
+                        voluptatum itaque recusandae aliquid sapiente?
+                    </div>
+                </div>
+            </div>
+            <div class="client-one ctwo">
+                <div class="client-id">
+                    <div>
+                        <img src="jpg/person2.jpg" alt="">
+                    </div>
+                    <div>
+                        Liara Karian <i class="fab fa-twitter"></i><br>
+                        <span>@liarakarian</span>
+                        <br>
+                    </div>
+                    <div class="paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut temporibus fugiat iusto eius,
+                        aliquam hic voluptatum itaque recusandae aliquid sapiente?
+                    </div>
+                </div>
+            </div>
+            <div class="client-one cthree">
+                <div class="client-id">
+                    <div>
+                        <img src="jpg/person3.jpg" alt="">
+                    </div>
+                    <div>
+                        Ricky Danial <i class="fab fa-twitter"></i><br>
+                        <span>@rickydanial</span>
+                        <br>
+                    </div>
+                    <div class="paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut temporibus fugiat iusto eius,
+                        aliquam iusto eius, aliquam maxime architecto debitis perspiciatis blanditiis nobis error,
+                        voluptatibus hic voluptatum itaque recusandae aliquid sapiente?
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h4><i class="fas fa-paint-brush"></i>CONTACT</h4>
+        <h2>Visit Shop Today</h2>
+        <img src="png/wo.png" alt="">
+        <div class="contact-content">
+            <div class="fcontact-one">
+                <h3>Opening Hours</h3>
+                <p><i class="fas fa-clock"></i> Monday To Friday - 9am to 9pm</p>
+                <p><i class="fas fa-clock"></i> Saturday And Sunday - 8am to 10pm</p>
+            </div>
+            <div class="fcontact-two">
+                <h3>Get In Touch</h3>
+                <p>#30 abc Colony xyz WestBengal in <i class="fas fa-map-marker-alt"></i></p>
+                <p>example@gmail.com <i class="fab fa-telegram"></i></p>
+                <p>+01 11234689 <i class="fas fa-phone"></i></i></p>
+            </div>
+        </div>
+        <div class="social-contact">
             <ul>
-                <li><a href="">About us</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Blog posts </a></li>
-                <li><a href="">Pricing plans</a></li>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
             </ul>
         </div>
-        <div>
-            <h2>Useful links</h2>
-            <ul>
-                <li><a href="">About us</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Blog posts </a></li>
-                <li><a href="">Pricing plans</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Useful links</h2>
-            <ul>
-                <li><a href="">About us</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Blog posts </a></li>
-                <li><a href="">Pricing plans</a></li>
-            </ul>
-        </div>
-      </div>
-   </footer>
-    <script src="main.js"></script>
+    </section>
+
+    <script src="java.js"></script>
 </body>
+
 </html>

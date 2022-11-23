@@ -1,0 +1,690 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-X: hidden;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) ,url(jpg/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.logo{
+    font-family: cursive;
+    font-size: 2.5em;
+}
+.logo span{
+    color: rgb(230, 65, 5);
+}
+.menubar{
+    display: none;
+}
+.menucross{
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+.menu a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 50px;
+}
+.menu a:hover:after{
+    transition: .5s;
+    width: 100%;
+    background: red;
+}
+.menu a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 3px;
+    right: 0;
+    border-radius: 5px;
+    background: red;
+    transition: .4s;
+}
+.menu  a:hover::before{
+    opacity: 0;
+    width: 100%;
+}
+
+.menu a:first-child{
+    color: rgb(230, 65, 5);
+}
+.menu a:hover{
+    color: rgb(230, 65, 5);
+}
+.icon i{
+    font-size: 20px;
+}
+.icon i:hover{
+    color: rgb(230, 65, 5);
+}
+.icon a{
+    text-decoration: none;
+    background:rgb(230, 65, 5);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.h-text{
+    color: white;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#camera{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.h-text h1{
+    font-family: sans-serif;
+    font-size:2.5em;
+    line-height: 1.5em;
+    
+}
+
+.h-text input{
+    width: 60%;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.h-text button{
+    padding: 15px 10px;
+    width: 25%;
+    background:rgb(230, 65, 5);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.filter-gallery{
+    padding: 80px;
+    transition: 2s;
+    margin-top: 200px;
+    opacity: 0;
+    overflow: hidden;
+}
+.filterGallery-active{
+    margin-top: 10px;
+    opacity: 1;
+}
+.portfolio-menu{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.portfolio-menu  li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+.portfolio-menu li:hover{
+    color: white;
+    background: rgb(230, 65, 5);
+    border-radius: 5px;
+}
+.portfolio-menu .active{
+    color: white;
+    background: rgb(230, 65, 5);
+    border-radius: 5px;
+}
+.portfolio-item{
+    width: 100%;
+    left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    perspective: 500;
+    transform-style: preserve-3d;
+}
+.portfolio-item .item{
+    height: 360px;
+    width: 360px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    transition: 1s;
+   
+}
+.portfolio-item .one{
+transform: rotateY(90deg);
+opacity: 0;
+}
+.portfolio-item .item-one{
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+.portfolio-item .two{
+transform: rotateY(90deg);
+opacity: 0;
+}
+.portfolio-item .item-two{
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+.portfolio-item .three{
+transform: rotateY(90deg);
+opacity: 0;
+}
+.portfolio-item .item-three{
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+.portfolio-item .four{
+transform: scale(0);
+transform-origin: center;
+
+}
+.portfolio-item .item-four{
+  transform: scale(1);
+}
+.portfolio-item .five{
+transform: scale(0);
+transform-origin: center;
+
+}
+.portfolio-item .item-five{
+  transform: scale(1);
+}
+.portfolio-item .six{
+transform: scale(0);
+transform-origin: center;
+
+}
+.portfolio-item .item-six{
+  transform: scale(1);
+}
+.portfolio-item .seven{
+transform: translateY(300px);
+opacity: 0;
+}
+.portfolio-item .item-seven{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.portfolio-item .eight{
+transform: translateY(300px);
+opacity: 0;
+}
+.portfolio-item .item-eight{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.portfolio-item .nine{
+transform: translateY(300px);
+opacity: 0;
+}
+.portfolio-item .item-nine{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.portfolio-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.member{
+    width: 100%;
+    font-family: sans-serif;
+   overflow: hidden;
+}
+.member-info{
+    width: 50%;
+    margin:40px auto;
+    text-align: center;
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: 2s;
+}
+.memberInfoadd{
+    transform: translateY(-20px);
+    opacity: 1;
+}
+.member-info h1{
+    font-family: sans-serif;
+    font-size: 2.5em;
+    padding: 20px 0px;
+}
+.member-info h1 span{
+    color:  rgb(230, 65, 5);
+}
+.member-card{
+    text-align: center;
+    padding-top: 40px;
+    width: 80%;
+    margin: 10px auto;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 2s;
+}
+.memberCardadd{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 2s;
+}
+.member-card > img{
+    width: 100px;
+    
+}
+.member-card p{
+    margin: 15px 0px;
+    line-height: 2em;
+}
+.member-card h2{
+    padding: 10px 0px;
+    
+}
+.m-images{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    overflow: hidden;
+    transform: scale(0);
+    transform-origin: center;
+    transition: 2s;
+    overflow: hidden;
+}
+.mimageAdd{
+    transform: scale(1);
+}
+.m-images img{
+    min-width: 225px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+}
+.m-images img:hover{
+    transform: scale(1.3);
+    z-index: 1;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: rgb(41, 40, 40);
+    overflow: hidden;
+}
+.newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-bottom: 1px solid rgb(95, 95, 95);
+}
+.newsletter .ntext{
+    text-align: right;
+}
+
+.newsletter h2{
+    font-size: 2em;
+    font-family: sans-serif;
+    color: rgb(184, 184, 184);
+
+}
+.newsletter p{
+    color: rgb(184, 184, 184);
+    margin: 10px 5px;
+
+}
+.newsletter input{
+    padding: 5px 5px;
+    height: 35px;
+    font-size: 18px;
+    outline: none;
+   border: none;
+    border-radius: 8px;
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 0px;
+   margin: 10px 0px;
+}
+.newsletter button{
+    padding:5px 20px;
+    margin-right: 20px;
+  height: 36px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: rgb(228, 65, 6);
+    color: whitesmoke;
+}
+.f-contact{
+    color: rgb(218, 218, 218);
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em 0em;
+    border-bottom: 1px solid rgb(92, 92, 92);
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.f-contact h2{
+    margin: 15px 0px;
+}
+.f-contact .first-child{
+    margin-left: 15px;
+    transform: translateX(-800px);
+    transition: 1s;
+}
+.f-contact .firstChildAdd{
+    transform: translateX(0px);
+}
+.f-contact .first-child ul li{
+display: inline-block;
+padding: 0px 10px;
+background: whitesmoke;
+width: 40px;
+height: 40px;
+text-align: center;
+line-height: 42px;
+border-radius: 30px;
+}
+.f-contact .first-child ul li a:hover{
+    color: black;
+    font-size: 22px;
+}
+.f-contact p{
+    color: gray;
+    padding: 10px 0px;
+    transition: .4s;
+}
+.f-contact p:hover{
+    color: whitesmoke;
+}
+.f-contact ul{
+    list-style: none;
+}
+.f-contact a{
+    line-height: 1.5em;
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.f-contact a:hover{
+    color: whitesmoke;
+}
+.ntext{
+    transform: translateX(600px);
+    transition: 2s;
+    opacity: 0;
+}
+.Nnextadd{
+    transform: translateX(0px);
+    opacity: 1;
+}
+@media (max-width:930px) {
+    .menu{
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+        padding-top: 100px;
+        top: -500px;
+        left: 0;
+        background: rgba(136, 136, 136, 0.068);
+        transition: 1s;
+    }
+    .active{
+        top: 80px;
+        background: white;
+
+    }
+    .menu a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        font-family: sans-serif;
+        font-size: 20px;
+        display: block;
+    }
+    .menu a:hover:after{
+        display: none;
+        background: red;
+    }
+    .menu  a:hover::before{
+        width: 0%;
+    }
+    .menubar{
+        margin-left: 150px;
+        font-size: 25px;
+        display: block;
+    }
+    .menucross{
+        position: absolute;
+        left: 40px;
+        top: 30px;
+        font-family: cursive;
+        font-size: 30px;
+        display: block;
+    }
+    .portfolio-item{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .portfolio-item .item{
+        height: 260px;
+        width: 260px;
+        margin-bottom: 20px;
+    }
+    .m-images{
+        width: 100%;
+        display: flex;
+        margin: 20px 0px;
+        overflow-x: scroll;
+    }
+    .newsletter >div{
+        flex-basis: none;
+    }
+    .newsletter .ntext{
+        text-align: right;
+    }
+    .newsletter{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        border: 1px solid rgb(95, 95, 95);
+    }
+    .newsletter > div{
+        text-align: center;
+    }
+}
+
+
+@media (max-width:740px){
+    nav{
+        padding: 0px 50px;
+    }
+    .logo{
+        font-family: cursive;
+        font-size: 2em;
+    }
+    #camera{
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    .h-text h1{
+        font-family: sans-serif;
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+    .h-text input{ 
+        padding: 10px 8px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+    .h-text button{
+        padding: 9px 8px;
+        background:rgb(230, 65, 5);
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 6px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .portfolio-item{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .f-contact h2{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width:710px){
+    .logo{
+        font-family: cursive;
+        font-size: 1.3em;
+    }
+    .icon i{
+        font-size: 18px;
+    }
+    .menubar{
+        margin-left: 100px;
+        font-size: 25px;
+        display: block;
+    }.portfolio-menu ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 10px 0px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: 0.5s;
+        text-align: center;
+    }
+    .icon a{
+        text-decoration: none;
+        background:rgb(230, 65, 5);
+        color: white;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    .f-contact h2{
+        font-size: 20px;
+    }
+    .f-contact ul li a{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width:480px) {
+    nav{
+        padding: 0px 15px;
+    }
+    .menubar{
+        margin-left: 40px;
+        font-size: 20px;
+        display: block;
+    }
+    .h-text h1{
+        font-family: sans-serif;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    .portfolio-item .item{
+        height: 200px;
+        width: 260px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .member-info h1{
+        font-size: 2em;
+    }
+.newsletter div h2{
+    font-size: 2em;
+}
+.newsletter .ntext{
+    text-align: center;
+}.newsletter input{
+    padding: 5px 5px;
+    height: 35px;
+    font-size: 18px;
+    outline: none;
+   border: none;
+    border-radius: 8px;
+   margin: 10px 0px;
+}
+.newsletter button{
+    padding:5px 20px;
+    margin-right: 20px;
+  height: 36px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: rgb(228, 65, 6);
+    color: whitesmoke;
+}
+}
